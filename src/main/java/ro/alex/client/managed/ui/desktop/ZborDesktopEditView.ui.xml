@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:a="urn:import:ro.alex.client.managed.ui" xmlns:d="urn:import:com.google.gwt.user.datepicker.client" xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:r="urn:import:ro.alex.client.scaffold.ui">
+
+  <ui:style>
+   .errors {
+      padding-left: 0.5em;
+      background-color: red;
+    }
+    .fields {
+      margin-top: 0.5em;
+      margin-left: 1em;
+    }
+    .label {
+      min-height: 25px;
+      font-weight: bold;
+    }
+    .button {
+      margin-right: 1em;
+    }
+    .bar {
+      margin-left: 1em;
+    }
+    .header {
+      margin-left: 1em;
+      color: #4B4A4A;
+      text-shadow: #ddf 1px 1px 0;
+      margin-bottom: 0;
+    }
+    .underline {
+      border-bottom: 2px solid #6F7277;
+    }
+  </ui:style>
+ 
+  <g:HTMLPanel>
+    <div class="{style.underline}">    
+      <h3 class="{style.header}" ui:field="editTitle">
+        <ui:msg>Edit Zbor</ui:msg>
+      </h3>
+      <h3 class="{style.header}" ui:field="createTitle">
+                <ui:msg>New Zbor</ui:msg>
+            </h3>
+    </div>
+    <div class="{style.errors}" ui:field="errors"/>
+
+    <table class="{style.fields}" id="boundElementHolder">
+      <tr id="avion">
+                <td>
+                    <div class="{style.label}">Avion:</div>
+                </td>
+                <td>
+                    <g:ValueListBox ui:field="avion"/>
+                </td>
+            </tr>
+      <tr id="cod">
+                <td>
+                    <div class="{style.label}">Cod:</div>
+                </td>
+                <td>
+                    <g:TextBox ui:field="cod"/>
+                </td>
+            </tr>
+      <tr id="numarKm">
+                <td>
+                    <div class="{style.label}">Numar Km:</div>
+                </td>
+                <td>
+                    <g:IntegerBox ui:field="numarKm"/>
+                </td>
+            </tr>
+      <tr id="data">
+                <td>
+                    <div class="{style.label}">Data:</div>
+                </td>
+                <td>
+                    <d:DateBox ui:field="data"/>
+                </td>
+            </tr>
+      <tr id="orasp">
+                <td>
+                    <div class="{style.label}">Orasp:</div>
+                </td>
+                <td>
+                    <g:ValueListBox ui:field="orasp"/>
+                </td>
+            </tr>
+      <tr id="orasd">
+                <td>
+                    <div class="{style.label}">Orasd:</div>
+                </td>
+                <td>
+                    <g:ValueListBox ui:field="orasd"/>
+                </td>
+            </tr>
+      <tr id="deschis">
+                <td>
+                    <div class="{style.label}">Deschis:</div>
+                </td>
+                <td>
+                    <g:CheckBox ui:field="deschis"/>
+                </td>
+            </tr>
+      <tr id="escala">
+                <td>
+                    <div class="{style.label}">Escala:</div>
+                </td>
+                <td>
+                    <g:CheckBox ui:field="escala"/>
+                </td>
+            </tr>
+    </table>
+
+    <div class="{style.bar}">
+      <g:Button addStyleNames="{style.button}" ui:field="save">Save</g:Button>
+      <g:Button addStyleNames="{style.button}" ui:field="cancel">Cancel</g:Button>
+    </div>
+  </g:HTMLPanel>
+</ui:UiBinder>

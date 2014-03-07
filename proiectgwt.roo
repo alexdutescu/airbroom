@@ -1,0 +1,26 @@
+
+project --topLevelPackage ro.alex --projectName airbroom
+
+jpa setup --database MYSQL --provider HIBERNATE --userName root --databaseName pr2db --hostName 127.0.0.1
+
+logging setup --level DEBUG
+
+entity jpa --class ro.alex.server.model.Zbor --testAutomatically 
+
+field string --fieldName aeroportDestinatie
+
+field string --fieldName aeroportPlecare
+
+field boolean --fieldName escala
+
+field number --fieldName numarLocuri --type java.lang.Long
+
+field date --fieldName dataPlecare --type java.util.Date
+
+
+entity jpa --class ro.alex.server.model.Rezervare --testAutomatically 
+
+web gwt setup
+
+
+

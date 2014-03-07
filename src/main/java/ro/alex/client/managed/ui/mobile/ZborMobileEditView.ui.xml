@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:a="urn:import:ro.alex.client.managed.ui" xmlns:d="urn:import:com.google.gwt.user.datepicker.client" xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:r="urn:import:ro.alex.client.scaffold.ui">
+  <ui:style>
+    .outer {
+      padding: 10px;
+    }
+    .error {
+      padding-left: 0.5em;
+      background-color: red;
+    }
+    .label {
+      font-weight: bold;
+    }
+    .value {
+      padding-bottom: 10px;
+    }
+  </ui:style>
+ 
+  <g:HTMLPanel debugId="boundElementHolder" styleName="{style.outer}">
+    <div class="{style.error}" ui:field="errors"/>
+    
+    <div id="avion">
+            <div class="{style.label}">Avion</div>
+            <div class="{style.value}">
+                <g:ValueListBox ui:field="avion"/>
+            </div>
+        </div>
+    <div id="cod">
+            <div class="{style.label}">Cod</div>
+            <div class="{style.value}">
+                <g:TextBox ui:field="cod"/>
+            </div>
+        </div>
+    <div id="numarKm">
+            <div class="{style.label}">Numar Km</div>
+            <div class="{style.value}">
+                <g:IntegerBox ui:field="numarKm"/>
+            </div>
+        </div>
+    <div id="data">
+            <div class="{style.label}">Data</div>
+            <div class="{style.value}">
+                <d:DateBox ui:field="data"/>
+            </div>
+        </div>
+    <div id="orasp">
+            <div class="{style.label}">Orasp</div>
+            <div class="{style.value}">
+                <g:ValueListBox ui:field="orasp"/>
+            </div>
+        </div>
+    <div id="orasd">
+            <div class="{style.label}">Orasd</div>
+            <div class="{style.value}">
+                <g:ValueListBox ui:field="orasd"/>
+            </div>
+        </div>
+    <div id="deschis">
+            <div class="{style.label}">Deschis</div>
+            <div class="{style.value}">
+                <g:CheckBox ui:field="deschis"/>
+            </div>
+        </div>
+    <div id="escala">
+            <div class="{style.label}">Escala</div>
+            <div class="{style.value}">
+                <g:CheckBox ui:field="escala"/>
+            </div>
+        </div>
+
+    <g:Button ui:field="save">Save</g:Button>
+  </g:HTMLPanel>
+</ui:UiBinder>

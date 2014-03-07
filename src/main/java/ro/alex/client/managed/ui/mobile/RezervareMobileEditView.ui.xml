@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:a="urn:import:ro.alex.client.managed.ui" xmlns:d="urn:import:com.google.gwt.user.datepicker.client" xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:r="urn:import:ro.alex.client.scaffold.ui">
+  <ui:style>
+    .outer {
+      padding: 10px;
+    }
+    .error {
+      padding-left: 0.5em;
+      background-color: red;
+    }
+    .label {
+      font-weight: bold;
+    }
+    .value {
+      padding-bottom: 10px;
+    }
+  </ui:style>
+ 
+  <g:HTMLPanel debugId="boundElementHolder" styleName="{style.outer}">
+    <div class="{style.error}" ui:field="errors"/>
+    
+    <div id="cost">
+            <div class="{style.label}">Cost</div>
+            <div class="{style.value}">
+                <g:DoubleBox ui:field="cost"/>
+            </div>
+        </div>
+    <div id="locDus">
+            <div class="{style.label}">Loc Dus</div>
+            <div class="{style.value}">
+                <g:ValueListBox ui:field="locDus"/>
+            </div>
+        </div>
+    <div id="locIntors">
+            <div class="{style.label}">Loc Intors</div>
+            <div class="{style.value}">
+                <g:ValueListBox ui:field="locIntors"/>
+            </div>
+        </div>
+    <div id="nume">
+            <div class="{style.label}">Nume</div>
+            <div class="{style.value}">
+                <g:TextBox ui:field="nume"/>
+            </div>
+        </div>
+    <div id="prenume">
+            <div class="{style.label}">Prenume</div>
+            <div class="{style.value}">
+                <g:TextBox ui:field="prenume"/>
+            </div>
+        </div>
+    <div id="cod">
+            <div class="{style.label}">Cod</div>
+            <div class="{style.value}">
+                <g:TextBox ui:field="cod"/>
+            </div>
+        </div>
+    <div id="zborDus">
+            <div class="{style.label}">Zbor Dus</div>
+            <div class="{style.value}">
+                <g:ValueListBox ui:field="zborDus"/>
+            </div>
+        </div>
+    <div id="zborIntors">
+            <div class="{style.label}">Zbor Intors</div>
+            <div class="{style.value}">
+                <g:ValueListBox ui:field="zborIntors"/>
+            </div>
+        </div>
+    <div id="persoana">
+            <div class="{style.label}">Persoana</div>
+            <div class="{style.value}">
+                <g:ValueListBox ui:field="persoana"/>
+            </div>
+        </div>
+    <div id="dusIntors">
+            <div class="{style.label}">Dus Intors</div>
+            <div class="{style.value}">
+                <g:CheckBox ui:field="dusIntors"/>
+            </div>
+        </div>
+
+    <g:Button ui:field="save">Save</g:Button>
+  </g:HTMLPanel>
+</ui:UiBinder>

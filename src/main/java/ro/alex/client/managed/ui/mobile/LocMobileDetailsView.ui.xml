@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+ <ui:style>
+    .outer {
+      padding: 10px;
+    }
+    .label {
+      font-weight: bold;
+    }
+    .value {
+      padding: 4px 0px 15px 15px;
+    }
+  </ui:style>
+
+  <g:HTMLPanel debugId="boundElementHolder" styleName="{style.outer}">
+    <div id="id">
+            <div class="{style.label}">Id</div>
+            <div class="{style.value}" ui:field="id"/>
+        </div>
+    <div id="numar">
+            <div class="{style.label}">Numar</div>
+            <div class="{style.value}" ui:field="numar"/>
+        </div>
+    <div id="clasa">
+            <div class="{style.label}">Clasa</div>
+            <div class="{style.value}" ui:field="clasa"/>
+        </div>
+    <div id="avion">
+            <div class="{style.label}">Avion</div>
+            <div class="{style.value}" ui:field="avion"/>
+        </div>
+    <div id="zbor">
+            <div class="{style.label}">Zbor</div>
+            <div class="{style.value}" ui:field="zbor"/>
+        </div>
+    <div id="ocupat">
+            <div class="{style.label}">Ocupat</div>
+            <div class="{style.value}" ui:field="ocupat"/>
+        </div>
+    <div id="version">
+            <div class="{style.label}">Version</div>
+            <div class="{style.value}" ui:field="version"/>
+        </div>
+
+    <g:Button ui:field="delete">Delete</g:Button>
+  </g:HTMLPanel>
+</ui:UiBinder>
